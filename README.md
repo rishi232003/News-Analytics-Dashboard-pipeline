@@ -37,7 +37,7 @@ Pulls news articles from News API (tech, business, science, health stuff), runs 
    cd news-stream-analyzer
 ```
 
-2. Install the Python stuff
+2. Install the Python package requirements
 ```bash
    pip install -r requirements.txt
 ```
@@ -90,7 +90,7 @@ The PySpark job grabs articles from News API, counts how many come from each sou
 └── requirements.txt                # Python packages
 ```
 
-## Stuff I might add later
+## Things I might add later
 
 - Sentiment analysis to show if news is positive/negative
 - Charts showing trends over time
