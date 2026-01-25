@@ -1,0 +1,16 @@
+# News API
+requests==2.31.0
+
+# Spark
+pyspark==3.5.0
+
+# MongoDB
+pymongo==4.6.1
+
+# Flask (for web app)
+flask==3.0.0
+flask-cors==4.0.0
+
+# Utilities
+python-dotenv==1.0.0
+pandas==2.1.4
