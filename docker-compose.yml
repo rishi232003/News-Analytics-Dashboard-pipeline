@@ -12,7 +12,7 @@ services:
     volumes:
       - mongo_data:/data/db
     networks:
-      - reddit-network
+      - news-network
     restart: unless-stopped
 
   mongo-express:
@@ -28,12 +28,12 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://admin:password@mongodb:27017/
       ME_CONFIG_BASICAUTH: "false"
     networks:
-      - reddit-network
+      - news-network
     restart: unless-stopped
 
 volumes:
   mongo_data:
 
 networks:
-  reddit-network:
+  news-network:
     driver: bridge
