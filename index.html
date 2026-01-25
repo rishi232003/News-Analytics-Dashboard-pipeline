@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Analytics Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Real Time News Data</h1>
+            <p class="subtitle">Powered by PySpark, MongoDB, and Flask</p>
+        </div>
+    </header>
+
+    <!-- Stats Overview -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-articles">-</div>
+                    <div class="stat-label">Total Articles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total-sources">-</div>
+                    <div class="stat-label">News Sources</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total-categories">-</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total-keywords">-</div>
+                    <div class="stat-label">Keywords</div>
+                </div>
+            </div>
+            <p class="last-updated">Last updated: <span id="last-updated">-</span></p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="content-grid">
+            <!-- Top Sources -->
+            <section class="card">
+                <h2>Top News Sources</h2>
+                <div id="sources-list" class="list-container">
+                    <p class="loading">Loading sources...</p>
+                </div>
+            </section>
+
+            <!-- Categories -->
+            <section class="card">
+                <h2>Categories</h2>
+                <div id="categories-list" class="list-container">
+                    <p class="loading">Loading categories...</p>
+                </div>
+            </section>
+
+            <!-- Top Keywords -->
+            <section class="card full-width">
+                <h2>Top Keywords</h2>
+                <div id="keywords-list" class="keywords-container">
+                    <p class="loading">Loading keywords...</p>
+                </div>
+            </section>
+
+            <!-- Recent Articles -->
+            <section class="card full-width">
+                <h2>Recent Articles</h2>
+                <div id="articles-list" class="articles-container">
+                    <p class="loading">Loading articles...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Data Engineering Portfolio Project</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
