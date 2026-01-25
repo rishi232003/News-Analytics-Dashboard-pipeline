@@ -6,13 +6,17 @@ I built this to see what's actually trending in the news. It grabs articles from
 
 Pulls news articles from News API (tech, business, science, health stuff), runs them through PySpark to figure out which sources publish the most and what keywords keep showing up, then displays it all on a web page. The dashboard updates automatically so you can see what's happening right now.
 
-## Tools I used
+## Tech Stack
 
-- **PySpark** - handles the data processing (counting articles, finding trends, etc.)
-- **MongoDB** - stores everything (the articles + all the stats I calculated)
-- **Flask** - backend API that serves the data
-- **Docker** - runs MongoDB locally without installation headaches
-- **JavaScript/CSS** - built the actual dashboard you see in your browser
+PySpark — distributed data processing + trend aggregation
+
+MongoDB — stores articles and analytics results in collections
+
+Flask — backend API for serving processed data
+
+Docker — runs MongoDB locally with no setup issues
+
+JavaScript + CSS — interactive dashboard frontend
 
 ## What you can see on the dashboard
 
