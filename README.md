@@ -99,7 +99,6 @@ The PySpark job grabs articles from News API, counts how many come from each sou
 - Sentiment analysis to show if news is positive/negative
 - Charts showing trends over time
 - Search bar to find specific articles
-- Automatic scheduling so it updates without me running it manually
 - link to relevant youtube video to watch
 
 ## What I learned building this
